@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<input type="text" id="combinedSearch" placeholder="Search songs and playlists...">
+
+
+    <button id="toggle"></button>
+    <div class="musicPlayer">
+        <div id="allSongs">
+            <form action="" class="genre">
+                <select name="Select Genre" id="songGenre">
+                    <option value="Pop">Pop</option>
+                    <option value="Desi">Desi</option>
+                    <option value="Romantic">Romantic</option>
+                </select>
+            </form>
+            <h2 id="Songs">All Songs</h2>
+            <div id="songList"></div>
+        </div>
+        <div id="songCard">
+            <div id="songDisplay">
+                <img src="pop1.png" alt="" id="imgsong">
+                <p id="currSong">As It Was</p>
+                <p id="artist">Harry Styles</p>
+            </div>
+            <audio src="harry.mp3" id="player" controls></audio>
+            <div id="ctrlButtons">
+                <button id="prev"><=</button>
+                <button id="next">=></button>
+            </div>
+            <button id="addPlaylist">Add to Playlist</button>
+        </div>
+        <div id="playlists">
+            <h2 id="currPlaylist">Current Playlist</h2>
+            <div id="playlistcontent"></div>
+            <div id="allPlaylists"></div>
+            <button id="create">Create new playlist</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
